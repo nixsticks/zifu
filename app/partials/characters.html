@@ -1,8 +1,20 @@
 <h1>Results</h1>
-<ul>
-  <li ng-repeat="character in characters">
-    <p>{{character.string}}</p>
-    <p>{{character.kMandarin}}</p>
-    <p>{{character.kDefinition}}</p>
-  </li>
-</ul>
+<div class="rn-carousel-container">
+  <ul rn-carousel rn-carousel-control>
+    <li ng-repeat="character in characters" class="characters">
+      <div class="character">
+        <div class="front">
+          <div class="card">
+            <p>{{character.string}}</p>
+          </div>
+        </div>
+        <div class="back">
+          <div class="card">
+            <p>{{character.kMandarin}}</p>
+            <p>{{character.kDefinition}}</p>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

@@ -2,7 +2,7 @@
 
 
 // Declare app level module which depends on filters, and services
-var chineseApp = angular.module('chineseApp', ['ngRoute', 'chineseControllers']);
+var chineseApp = angular.module('chineseApp', ['ngRoute', 'ngAnimate', 'ngTouch', 'angular-carousel', 'chineseControllers']);
 
 chineseApp.config(['$routeProvider', function($routeProvider) {
   $routeProvider.
